@@ -3,8 +3,19 @@ import { getAllCars } from '@/libs/api';
 import CarCard from './CarCard';
 import { LiaAngleLeftSolid, LiaAngleRightSolid } from 'react-icons/lia';
 
+interface CarItem {
+  id: string;
+  imageUrl: string;
+  title: string;
+  year: number;
+  city: string;
+  state: string;
+  marketplacePrice: number;
+  [key: string]: any;
+}
+
 const CarList = () => {
-  const [carList, setCarList] = useState([]);
+  const [carList, setCarList] = useState<CarItem[]>([]);
   const [currentPage, setCurrentPage] = useState(1);
   const [totalPages, setTotalPages] = useState(1);
   const [searchQuery, setSearchQuery] = useState('');
