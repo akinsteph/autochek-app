@@ -1,4 +1,3 @@
-// src/app/components/CarList.tsx
 import React, { useEffect, useState } from 'react';
 import { getAllCars } from '@/libs/api';
 import CarCard from './CarCard';

@@ -11,7 +11,7 @@ const inter = Inter({
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <div suppressHydrationWarning className={inter.className}>
-    <Component {...pageProps} />
+      <Component {...pageProps} />
     </div>
   )
 }
