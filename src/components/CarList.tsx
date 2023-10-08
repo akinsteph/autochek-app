@@ -14,7 +14,7 @@ const CarList = () => {
   }, [currentPage, searchQuery]);
 
   const fetchData = async (page: number, query: string) => {
-    const response = await getAllCars(page, query);
+    const response = await getAllCars();
     setCarList(response.result);
     setTotalPages(response.pagination.totalPages);
   };
@@ -77,9 +77,11 @@ const CarList = () => {
         </div>
       </div>
       <div className="flex flex-wrap justify-between items-start gap-30">
-        {carList.map((car) => (
-          <CarCard key={car.id} car={car} />
-        ))}
+        {carList && (
+          carList.map((car) => (
+            <CarCard key={car.id} car={car} />
+          ))
+        )}
       </div>
     </div>
   );

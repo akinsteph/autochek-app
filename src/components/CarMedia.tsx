@@ -11,7 +11,7 @@ interface CarMedia {
   type: 'image' | 'video'; 
 }
 
-const CarMedia = ({ carId }) => {
+const CarMedia = ({ carId } : any) => {
   const [mediaList, setMediaList] = useState<CarMedia[]>([]);
   const [activeMedia, setActiveMedia] = useState<CarMedia | null>(null);
   const [mediaUrl, setMediaUrl] = useState<string | null>(null);
