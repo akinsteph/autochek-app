@@ -44,10 +44,11 @@ const CarMedia = ({ carId } : any) => {
   return (
     <div className="flex w-full flex-col">
       <div className="w-full p-4">
-        {/* <Image loading={"lazy"} src={activeMedia.url} alt="Car Media" width={800} height={600} /> */}
+        {/* <Image src={activeMedia.url} alt="Car Media" width={800} height={600} /> */}
         {activeMedia ? (
           activeMedia.type === 'image' ? (
-            <img
+            <Image
+            loading={"lazy"}
             src={activeMedia.url}
             alt={"Car Media"}
             className={"w-full h-[600px] object-cover rounded-5xs shadow-lg"}
@@ -72,8 +73,9 @@ const CarMedia = ({ carId } : any) => {
               className="cursor-pointer"
               onClick={() => handleMediaClick(media)}
             >
-              {media.type === 'image' ? (
-                <img
+              {media.type === 'image' ? (                
+                <Image
+                loading={"lazy"}
                   src={media.url}
                   alt={"Car Media"}
                   className={"w-full h-[75px] object-cover rounded-5xs shadow-lg hover:transform"}

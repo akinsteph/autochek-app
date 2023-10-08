@@ -1,6 +1,3 @@
-import { Head, Main, NextScript } from 'next/document'
-import Header from '@/components/Header'
-
 interface IPageLayout {
   children: any;
   className?: string;

@@ -10,7 +10,7 @@ const Footer = () => {
           <div>
             <Link href="/">
               <span className="text-white text-xl font-semibold">Logo</span>
-              <p className={"text-xs text-white opacity-50 mb-md"}>We help developers, designers and website owner's create stunning websites. We have been building a huge collection of website templates for every business and industry needs. Simply select your favourite template, edit, download and launch 🚀</p>
+              <p className={"text-xs text-white opacity-50 mb-md"}>{"We help developers, designers and website owner's create stunning websites. We have been building a huge collection of website templates for every business and industry needs. Simply select your favourite template, edit, download and launch 🚀"}</p>
             </Link>
             <div className={"w-full inline-flex gap-5 items-center justify-start"}>
               <Link href="/" className={"p-5 bg-white-site rounded-6xs w-md h-md inline-flex text-2xs"}>
