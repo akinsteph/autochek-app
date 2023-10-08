@@ -1,6 +1,10 @@
 {
-  "name": "autochek-app2",
-  "version": "0.1.0",
+  "name": "autochek-app",
+  "version": "0.1.0",  
+  "engines": {
+    "node": "18.x",
+    "npm": "8.19.4"
+  },
   "private": true,
   "scripts": {
     "dev": "next dev",
